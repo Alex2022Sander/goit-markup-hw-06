@@ -358,8 +358,8 @@ padding-top: 0;
   background-color: var(--bgcolor-wdtext);
 }
 .we-do-title {
-  font-size: 14px;
   line-height: 1.14;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
