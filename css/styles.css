@@ -758,17 +758,20 @@ pointer-events: none;
   margin-bottom: 4px;
 
 }
-.form-input,textarea {
-  padding: 8px;
-  font-family: inherit;
+.form-input {
+ margin: 0px;
+ height: 40px;
   width: 448px;
-height: 58px;
+  padding-left: 32px;
 border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+
 textarea {
   resize: none;
   width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 .form-icon {
   position: absolute;
