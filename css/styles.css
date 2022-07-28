@@ -679,7 +679,7 @@ width: 100%;
 .modal {
   position: relative;
   width: 528px;
-height: 581px;
+padding: 40px;
 background-color: var(--white-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -712,19 +712,24 @@ visibility: hidden;
 pointer-events: none;
 }
 /*разметка модального окна*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .form-title {
-  display: block;
-    font-weight: 700;
-    font-size: 20px;
+  font-weight: 700;
+    padding-top: 20px;
     line-height: 1.17;
     text-align: center;
     color: var(--current-color);
     margin-bottom: 12px;
-    padding: 40px;
     letter-spacing: 0.03em;
-    font-style: normal; 
+    font-style: normal;
+    font-size: 20px;
 }
+
 .form-group {
   position: relative;
 }
@@ -744,6 +749,8 @@ pointer-events: none;
     padding: 10px 52px;
     width: 200px;
     height: 50px;
+    flex-direction: column;
+    align-items: center;
 }
 .form-label {
   display: flex;
@@ -756,10 +763,17 @@ pointer-events: none;
   font-family: inherit;
   width: 448px;
 height: 58px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 textarea {
   resize: none;
   width: 448px;
+}
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
 }
 /*
 .submit {
