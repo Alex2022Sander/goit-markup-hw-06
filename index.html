@@ -464,11 +464,13 @@
       </div>
     </div>
 </div>
+
+
 </footer>
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="modal-btn" data-modal-close>
+    <button type="submit" data-modal-close class="close-btn">
       <svg class="modal-btn-icon" width="18px" height="18px">
         <use href="./images/icons.svg#icon-iconx"></use>
       </svg>
@@ -477,8 +479,9 @@
 
   
 
-    <form class="form">
-<strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
+    <form class="register-form">
+<strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+<div class="register-form-group" role="group">
       <div class="form-group">
         <label class="form-label" for="user-name">Ім'я</label>
         <input class="form-input" type="form-text" id="user-name">
@@ -504,10 +507,19 @@
               <label class="form-label" for="user-сomment">Коментар</label>
               <textarea class="textarea" type="form-text" id="user-сomment" placeholder="Введіть текст"></textarea>
               </div>
-              <label for="">
-                <input type="checkbox" name="" id=""> 
-                <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+            </div>
+
+              <label class="register-form-agreement">
+                <input class="register-checkbox visuaaly-hidden" type="checkbox" name="agreement" />
+                <svg class="register-icon" width="16" height="15">
+                  <use class="register-icon-uncheck" href="./images/icons.svg#icon-icon-check"></use>
+                  <use class="register-icon-check" href="./images/icons.svg#icon-vector"></use>
+                </svg>
+                <span class="register-form-agreement-text">
+                  Погоджуюся з розсилкою та приймаю <a class="register-form-agreement-link" href="">Умови договору</a></span>
               </label>
+
+
               <button type="submit" class="form-submit">Відправити</button>
     </form>
   
