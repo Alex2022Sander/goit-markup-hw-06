@@ -877,13 +877,13 @@ pointer-events: none;
   transition-timing-function: var(--cubic-bezier);
 }
 
-.form-fild-comment:focus .textarea,
-.form-fild-comment:hover .textarea{
+.form-fild-comment:focus .call-back-comment,
+.form-fild-comment:hover .call-back-comment{
   border: 1px solid var(--blue-logo-color);
 
 }
 
-.textarea {
+.call-back-comment {
   
     padding: 12px 16px;
 }
